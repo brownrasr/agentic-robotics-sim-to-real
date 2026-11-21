@@ -1,0 +1,86 @@
+schema_version: "1.0"
+dossier_id: "<fill>"
+publication_authorized: false
+task_and_robot_contract:
+  robot_hardware_firmware: "<fill>"
+  task_and_workspace: "<fill>"
+  frames_units_timestamps: "<fill>"
+  success_metrics: []
+  prohibited_states: []
+  force_speed_joint_thermal_power_limits: "<fill>"
+  human_supervisor: "<fill>"
+  physical_estop_test: "NOT_RUN"
+  remote_stop_test: "NOT_RUN"
+data_and_policy:
+  datasets_and_versions: []
+  licenses_consent_governance: "<fill>"
+  collection_robot_sensors_calibration: "<fill>"
+  failures_interventions_exclusions: []
+  policy_model_and_commit: "<fill>"
+  ai_generated_effects: []
+simulation_model:
+  engine_and_version: "<fill>"
+  robot_scene_asset_hashes: []
+  solver_timestep_substeps_control_rate: "<fill>"
+  actuator_and_sensor_models: "<fill>"
+  randomization_ranges: []
+  known_missing_physics: []
+gates:
+  task_contract:
+    state: CLOSED
+    owner: "<fill>"
+    evidence: []
+  data_policy_provenance:
+    state: CLOSED
+    owner: "<fill>"
+    evidence: []
+  simulation_disclosure:
+    state: CLOSED
+    owner: "<fill>"
+    evidence: []
+  heldout_simulation:
+    state: CLOSED
+    owner: "<fill>"
+    evidence: []
+  replay_and_hardware_in_loop:
+    state: CLOSED
+    owner: "<fill>"
+    evidence: []
+  shadow_mode:
+    state: CLOSED
+    owner: "<fill>"
+    evidence: []
+  bounded_hardware_trial:
+    state: CLOSED
+    owner: "<fill>"
+    evidence: []
+  monitored_pilot:
+    state: CLOSED
+    owner: "<fill>"
+    evidence: []
+discrepancies:
+  - assumption: "<fill>"
+    simulated_range: "<fill>"
+    measured_real_range: "<fill>"
+    measurement_method: "<fill>"
+    uncertainty: "<fill>"
+    safety_or_task_impact: "<fill>"
+    mitigation: "<fill>"
+    owner: "<fill>"
+    state: OPEN
+safety_layer:
+  independent_from_policy: true
+  action_schema_and_limits: "<fill>"
+  watchdog_and_command_expiry: "<fill>"
+  defined_safe_state: "<fill>"
+  stale_command_test: "NOT_RUN"
+trial_boundary:
+  no_unattended_actuation: true
+  minimum_energy_speed_payload_duration: "<fill>"
+  barriers_clearance_bystander_control: "<fill>"
+  one_variable_change: true
+rollback_and_retirement:
+  rollback_procedure: "<fill>"
+  incident_owner: "<fill>"
+  retirement_triggers: []
+final_state: "SIMULATION_ONLY"

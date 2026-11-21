@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "repository": "agentic-robotics-sim-to-real",
+  "reviewed_on": "2026-11-21",
+  "language": "en",
+  "policy": "Each source supports only the narrow claim_scope. Cross-project architecture, gates, thresholds, and selection guidance are author recommendations requiring local validation. URL reachability is transport evidence only.",
+  "sources": [
+    {
+      "name": "ROS2",
+      "url": "https://docs.ros.org/en/jazzy/Concepts/Basic.html",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "robot middleware concepts",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "Gazebo",
+      "url": "https://gazebosim.org/docs/harmonic/getstarted/",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "robot simulation role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "MuJoCo",
+      "url": "https://mujoco.readthedocs.io/en/stable/overview.html",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "physics simulation role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "IsaacLab",
+      "url": "https://isaac-sim.github.io/IsaacLab/main/source/overview/core-concepts/index.html",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "robot-learning simulation concepts",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "ros2_control",
+      "url": "https://control.ros.org/jazzy/index.html",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "robot control framework role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "MoveIt2",
+      "url": "https://moveit.picknik.ai/main/index.html",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "motion planning/manipulation role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "robosuite",
+      "url": "https://robosuite.ai/docs/overview.html",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "robot-learning environment role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "LeRobot",
+      "url": "https://github.com/huggingface/lerobot",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "robot-learning and dataset role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "OpenXEmbodiment",
+      "url": "https://robotics-transformer-x.github.io/",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "multi-dataset robotics effort",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "Gymnasium",
+      "url": "https://gymnasium.farama.org/tutorials/gymnasium_basics/environment_creation/",
+      "type": "official upstream middleware, simulator, dataset, or framework documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "environment construction concepts",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "OSHA Robotics",
+      "url": "https://www.osha.gov/robotics",
+      "type": "official occupational-safety topic guidance",
+      "authority": "US Occupational Safety and Health Administration",
+      "version_or_date": "official topic page; reviewed 2026-11-21",
+      "claim_scope": "industrial robotics hazards and safety resources in a US workplace context",
+      "does_not_support": "This page does not certify a robot, replace a task-specific risk assessment, or cover every jurisdiction and robot category."
+    },
+    {
+      "name": "ISO 10218-1",
+      "url": "https://www.iso.org/standard/73933.html",
+      "type": "official standards catalogue record",
+      "authority": "International Organization for Standardization",
+      "version_or_date": "ISO 10218-1:2025 catalogue record; reviewed 2026-11-21",
+      "claim_scope": "scope and identity of the industrial robot safety standard",
+      "does_not_support": "The catalogue page is not the full standard, is limited to its stated scope, and does not establish conformity or safety for a deployment."
+    }
+  ]
+}
