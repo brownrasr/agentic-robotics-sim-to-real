@@ -1,5 +1,10 @@
 # Evidence Gates for Agentic Robotics: Simulation to Real Hardware
 
+
+> **Decision:** Use these evidence gates when moving an agentic policy from data and simulation through shadow mode into bounded hardware trials; skip them if simulation success is being treated as deployment proof.
+>
+> **For:** robotics researchers, safety reviewers, and deployment engineers  ·  **Not for:** unsupervised real-world rollout or teams without stop and recovery controls
+
 A policy that succeeds in simulation is a hypothesis about a physical system. Moving it to a robot requires evidence about the task, data, coordinate frames, dynamics, perception, control rate, latency, uncertainty, operating envelope, human supervision, and recovery. “Sim-to-real” is not one conversion step.
 
 This guide defines a stage-gated dossier. It helps teams decide whether a learned or agentic policy should remain in data review, simulation, replay, shadow mode, bounded hardware testing, or retirement. It does not certify safety and does not authorize unattended actuation.
@@ -137,6 +142,14 @@ The ten upstream records in [`sources/sources.json`](sources/sources.json) suppo
 
 Reopen the dossier when robot hardware/firmware, calibration, asset, simulator, control rate, policy/model, dataset, sensor, task, workspace, payload, safety layer, network, or operator procedure changes. Version every transition and preserve the evidence used by the approving human.
 
+## Adjacent guides
+
+- [ai-research-reproducibility](https://github.com/Lindenberg668/ai-research-reproducibility) — Use it to package the claims, immutable inputs, environment, variance, and negative results behind each gate.
+- [agent-execution-control-sandbox](https://github.com/MargaritaOfficial/agent-execution-control-sandbox) — Use it when simulation or policy tooling also executes untrusted code that needs isolation.
+- [agent-observability-field-guide](https://github.com/duthdoll45/agent-observability-field-guide) — Use it when policy decisions, tool calls, and intervention points need structured traces.
+
 ## License
 
 Original guide and transfer-evidence dossier: CC BY 4.0. Linked projects and documentation retain their terms.
+
+If this saved you a decision, star the repo — it is how the next reader finds it.
